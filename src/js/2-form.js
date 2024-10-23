@@ -11,7 +11,7 @@ const textareaInput = document.querySelector('textarea[name="message"]');
 form.addEventListener('input',handleInput);
 function handleInput(event) {
     const { name, value } = event.target;
-    formData[name] = value;
+    formData[name] = value.trim();
 saveToStorage();
 }
 
